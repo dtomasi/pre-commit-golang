@@ -75,6 +75,13 @@
     files: '\.go$'
     language: 'script'
     description: "Runs `go build`, requires golang"
+-   id: go-install
+    name: 'go-install'
+    always_run: true
+    exclude: '.+'
+    entry: run-go-install.sh
+    language: 'script'
+    description: "Runs `go install`, requires golang"
 -   id: go-generate
     name: 'go-generate'
     entry: run-go-generate.sh
