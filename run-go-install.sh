@@ -22,4 +22,4 @@ for i in "$@"; do
   esac
 done
 
-exec go install "${PACKAGE}@${VERSION:-latest}"
+GO111MODULE=on exec go install "${PACKAGE}@${VERSION:-latest}"
